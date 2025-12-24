@@ -23,11 +23,11 @@ export default async function ProfilePage() {
 
             {/* Profile Header Card */}
             <div className="glass-card rounded-3xl p-8 relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-r from-purple-800 to-indigo-800 opacity-50" />
+                <div className="absolute top-0 left-0 w-full h-32 bg-white/5 opacity-50" />
 
                 <div className="relative flex flex-col md:flex-row gap-6 mt-12 items-end">
-                    <div className="w-32 h-32 rounded-3xl bg-zinc-900 border-4 border-zinc-900 flex items-center justify-center shadow-2xl relative z-10">
-                        <span className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">AR</span>
+                    <div className="w-32 h-32 rounded-3xl bg-black border-4 border-black flex items-center justify-center shadow-2xl relative z-10">
+                        <span className="text-4xl font-bold text-white">AR</span>
                     </div>
 
                     <div className="flex-1 mb-2">
@@ -41,10 +41,10 @@ export default async function ProfilePage() {
                     <div className="flex flex-col items-end gap-2">
                         <div className="flex items-center gap-2">
                             <span className="text-sm font-medium text-muted-foreground">Profile Strength</span>
-                            <span className="text-xl font-bold text-green-400"><AnimatedCounter value={strength} />%</span>
+                            <span className="text-xl font-bold text-white"><AnimatedCounter value={strength} />%</span>
                         </div>
                         <div className="w-48 h-2 bg-white/10 rounded-full overflow-hidden">
-                            <AnimatedProgressBar value={strength} />
+                            <AnimatedProgressBar value={strength} className="bg-white" />
                         </div>
                         <Button size="sm" variant="outline" className="mt-2">Edit Profile</Button>
                     </div>
@@ -57,7 +57,7 @@ export default async function ProfilePage() {
                 <MotionItem className="glass-card col-span-2">
                     <CardHeader>
                         <CardTitle className="text-lg flex items-center gap-2">
-                            <Award className="text-purple-400" /> Verified Skills
+                            <Award className="text-white" /> Verified Skills
                         </CardTitle>
                     </CardHeader>
                     <CardContent>
@@ -90,7 +90,7 @@ export default async function ProfilePage() {
                         </div>
                         <div className="flex justify-between items-center">
                             <span className="text-muted-foreground">Response Rate</span>
-                            <span className="font-bold text-green-400"><AnimatedCounter value={12} />%</span>
+                            <span className="font-bold text-white"><AnimatedCounter value={12} />%</span>
                         </div>
                     </CardContent>
                 </MotionItem>
@@ -99,7 +99,7 @@ export default async function ProfilePage() {
                 <MotionItem className="glass-card col-span-3">
                     <CardHeader>
                         <CardTitle className="text-lg flex items-center gap-2">
-                            <GraduationCap className="text-blue-400" /> Education
+                            <GraduationCap className="text-white" /> Education
                         </CardTitle>
                     </CardHeader>
                     <CardContent>

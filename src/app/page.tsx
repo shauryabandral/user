@@ -4,20 +4,22 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { CheckCircle2, ShieldCheck, Zap, Globe } from "lucide-react"
 
+// ... (imports)
+
 export default function LandingPage() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-900/40 via-background to-background overflow-hidden relative">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-black overflow-hidden relative">
 
-      {/* Background Orbs */}
-      <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-purple-600/30 rounded-full blur-3xl opacity-50 animate-pulse-slow" />
-      <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-3xl opacity-30" />
+      {/* Background Orbs - Reduced to subtle white glows */}
+      <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl opacity-20 animate-pulse-slow" />
+      <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl opacity-10" />
 
       {/* Nav */}
       <nav className="fixed top-0 w-full z-50 px-6 py-4 glass border-b-0">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center">
-              <span className="font-bold text-white text-xl">L</span>
+            <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+              <span className="font-bold text-black text-xl">L</span>
             </div>
             <span className="font-bold text-xl tracking-tight">LinkOrc</span>
           </div>
@@ -34,12 +36,12 @@ export default function LandingPage() {
 
       {/* Hero */}
       <main className="z-10 text-center px-4 max-w-4xl pt-20">
-        <Badge variant="verified" className="mb-6 px-4 py-1 text-sm bg-green-900/20 border-green-500/30">
+        <Badge variant="verified" className="mb-6 px-4 py-1 text-sm bg-white/10 border-white/20 text-white">
           <ShieldCheck className="w-4 h-4 mr-2" />
           Verified Opportunities Only
         </Badge>
 
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400">
+        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-white">
           Launch Your Career <br /> Without The Noise.
         </h1>
 
@@ -63,17 +65,17 @@ export default function LandingPage() {
         {/* Feature Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20 text-left">
           <div className="glass-card p-6 rounded-2xl">
-            <CheckCircle2 className="w-8 h-8 text-green-400 mb-4" />
+            <CheckCircle2 className="w-8 h-8 text-white mb-4" />
             <h3 className="font-bold text-lg mb-2">Verified Only</h3>
             <p className="text-sm text-gray-400">Every opportunity is manually verified. Zero scams, strict safety protocols.</p>
           </div>
           <div className="glass-card p-6 rounded-2xl">
-            <Zap className="w-8 h-8 text-yellow-400 mb-4" />
+            <Zap className="w-8 h-8 text-white mb-4" />
             <h3 className="font-bold text-lg mb-2">AI Matching</h3>
             <p className="text-sm text-gray-400">See your eligibility score instantly. Know exactly what skills you&apos;re missing.</p>
           </div>
           <div className="glass-card p-6 rounded-2xl">
-            <Globe className="w-8 h-8 text-blue-400 mb-4" />
+            <Globe className="w-8 h-8 text-white mb-4" />
             <h3 className="font-bold text-lg mb-2">Global Reach</h3>
             <p className="text-sm text-gray-400">Remote internships, gigs, and full-time roles from around the world.</p>
           </div>

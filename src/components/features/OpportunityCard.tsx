@@ -16,8 +16,8 @@ import { MotionCardWrapper, MotionButtonWrapper, AnimatedCounter } from "@/compo
 // ... imports
 
 export function OpportunityCard({ opportunity, match }: OpportunityCardProps) {
-    const scoreColor = match.score >= 90 ? "text-green-400" : match.score >= 70 ? "text-yellow-400" : "text-red-400";
-    const ringColor = match.score >= 90 ? "border-green-500/50" : match.score >= 70 ? "border-yellow-500/50" : "border-red-500/50";
+    const scoreColor = match.score >= 90 ? "text-white" : match.score >= 70 ? "text-gray-300" : "text-gray-500";
+    const ringColor = match.score >= 90 ? "border-white" : match.score >= 70 ? "border-gray-400" : "border-gray-700";
 
     return (
         <MotionCardWrapper className="h-full">
@@ -61,11 +61,11 @@ export function OpportunityCard({ opportunity, match }: OpportunityCardProps) {
 
                         {/* Missing Skills Warning */}
                         {match.missingSkills.length > 0 && (
-                            <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-3 text-xs">
-                                <p className="text-red-300 font-semibold mb-1">Missing Skills to Unlock:</p>
+                            <div className="bg-white/5 border border-white/10 rounded-lg p-3 text-xs">
+                                <p className="text-gray-400 font-semibold mb-1">Missing Skills to Unlock:</p>
                                 <div className="flex flex-wrap gap-1">
                                     {match.missingSkills.map(skill => (
-                                        <Badge key={skill} variant="destructive" className="h-5 px-1.5 text-[10px] bg-red-500/20 text-red-300 border-none">
+                                        <Badge key={skill} variant="destructive" className="h-5 px-1.5 text-[10px] bg-white/10 text-gray-400 border-none">
                                             {skill}
                                         </Badge>
                                     ))}

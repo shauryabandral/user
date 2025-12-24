@@ -7,14 +7,14 @@ import { Github } from "lucide-react"
 
 export default function LoginPage() {
     return (
-        <div className="min-h-screen flex items-center justify-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-900/20 via-background to-background relative overflow-hidden">
+        <div className="min-h-screen flex items-center justify-center bg-black relative overflow-hidden">
             {/* Background Elements */}
-            <div className="absolute top-[-20%] right-[20%] w-[400px] h-[400px] bg-purple-600/20 rounded-full blur-3xl opacity-30" />
+            <div className="absolute top-[-20%] right-[20%] w-[400px] h-[400px] bg-white/5 rounded-full blur-3xl opacity-30" />
 
             <Card className="w-full max-w-md glass-card border-white/10">
                 <CardHeader className="text-center">
-                    <div className="mx-auto w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-xl flex items-center justify-center mb-4">
-                        <span className="font-bold text-white text-xl">L</span>
+                    <div className="mx-auto w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4">
+                        <span className="font-bold text-black text-xl">L</span>
                     </div>
                     <CardTitle className="text-2xl font-bold">Welcome Back</CardTitle>
                     <p className="text-muted-foreground text-sm">Sign in to access your verified opportunities.</p>

@@ -97,11 +97,12 @@ export const AnimatedCounter = ({ value, className }: { value: number, className
 }
 
 // --- Progress Bar ---
+// --- Progress Bar ---
 export const AnimatedProgressBar = ({ value, className }: { value: number, className?: string }) => {
     return (
-        <div className={cn("h-full bg-green-500 rounded-full", className)} style={{ width: 0 }}>
+        <div className={cn("h-full w-full bg-white rounded-full", className)}>
             <motion.div
-                className="h-full w-full bg-inherit rounded-full"
+                className="h-full bg-inherit rounded-full"
                 initial={{ width: "0%" }}
                 animate={{ width: `${value}%` }}
                 transition={{ duration: 1, ease: "easeOut" }}

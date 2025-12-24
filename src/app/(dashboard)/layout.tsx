@@ -12,8 +12,8 @@ export default function DashboardLayout({
             {/* Sidebar */}
             <aside className="hidden md:flex flex-col w-64 border-r border-border/40 bg-card/30 backdrop-blur-xl">
                 <div className="p-6 flex items-center gap-2">
-                    <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center">
-                        <span className="font-bold text-white text-xl">L</span>
+                    <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                        <span className="font-bold text-black text-xl">L</span>
                     </div>
                     <span className="font-bold text-xl tracking-tight">LinkOrc</span>
                 </div>
@@ -28,7 +28,7 @@ export default function DashboardLayout({
 
                 <div className="p-4 border-t border-border/40">
                     <div className="flex items-center gap-3 p-2 rounded-lg bg-white/5 border border-white/5">
-                        <div className="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400 font-bold">
+                        <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white font-bold">
                             AR
                         </div>
                         <div className="flex-1 overflow-hidden">
@@ -50,7 +50,7 @@ export default function DashboardLayout({
                     <div className="ml-auto flex items-center gap-4">
                         <button className="relative p-2 rounded-full hover:bg-white/5 transition-colors">
                             <Bell size={20} className="text-muted-foreground" />
-                            <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+                            <span className="absolute top-2 right-2 w-2 h-2 bg-white rounded-full animate-pulse"></span>
                         </button>
                     </div>
                 </header>

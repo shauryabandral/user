@@ -56,16 +56,16 @@ export function ChatInterface() {
         <div className="flex flex-col h-[600px] w-full max-w-2xl mx-auto glass-card rounded-2xl overflow-hidden">
             {/* Header */}
             <div className="p-4 border-b border-white/10 bg-white/5 flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-                    <Bot size={18} className="text-white" />
+                <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center">
+                    <Bot size={18} className="text-black" />
                 </div>
                 <div>
                     <h3 className="font-bold">Coach Orc</h3>
-                    <p className="text-xs text-green-400 flex items-center gap-1">
+                    <p className="text-xs text-gray-400 flex items-center gap-1">
                         <motion.span
                             animate={{ opacity: [1, 0.4, 1] }}
                             transition={{ duration: 1.5, repeat: Infinity }}
-                            className="w-1.5 h-1.5 rounded-full bg-green-400"
+                            className="w-1.5 h-1.5 rounded-full bg-white"
                         /> Online
                     </p>
                 </div>
@@ -82,7 +82,7 @@ export function ChatInterface() {
                         )}
 
                         <div className={`max-w-[80%] rounded-2xl px-4 py-2 text-sm ${msg.role === 'user'
-                            ? 'bg-primary text-white rounded-br-none'
+                            ? 'bg-white text-black rounded-br-none'
                             : 'bg-white/10 text-gray-200 rounded-bl-none'
                             }`}>
                             {msg.content}

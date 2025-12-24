@@ -19,7 +19,7 @@ export default function LearnEarnPage() {
                 <section className="space-y-4">
                     <div className="flex items-center justify-between">
                         <h2 className="text-xl font-semibold flex items-center gap-2">
-                            <PlayCircle className="text-purple-400" /> Skill Tracks
+                            <PlayCircle className="text-white" /> Skill Tracks
                         </h2>
                         <Button variant="link">View All</Button>
                     </div>
@@ -53,7 +53,7 @@ export default function LearnEarnPage() {
                 <section className="space-y-4">
                     <div className="flex items-center justify-between">
                         <h2 className="text-xl font-semibold flex items-center gap-2">
-                            <DollarSign className="text-green-400" /> Micro-Earning
+                            <DollarSign className="text-white" /> Micro-Earning
                         </h2>
                         <Button variant="link">View All</Button>
                     </div>
@@ -62,15 +62,15 @@ export default function LearnEarnPage() {
                         {[1, 2].map(i => (
                             <MotionItem key={i}>
                                 <MotionCardWrapper>
-                                    <Card className="glass-card border-l-4 border-l-green-500 hover:bg-white/5 transition-colors cursor-pointer">
+                                    <Card className="glass-card border-l-4 border-l-white hover:bg-white/5 transition-colors cursor-pointer">
                                         <CardContent className="p-4">
                                             <div className="flex justify-between items-start mb-2">
                                                 <h3 className="font-semibold">UX Research Survey</h3>
-                                                <Badge variant="verified" className="bg-green-500/20 text-green-400">Verified</Badge>
+                                                <Badge variant="verified">Verified</Badge>
                                             </div>
                                             <p className="text-sm text-muted-foreground mb-3">Complete a 15-min survey about your job search experience.</p>
                                             <div className="flex justify-between items-center">
-                                                <span className="font-bold text-lg text-green-400">₹ 500</span>
+                                                <span className="font-bold text-lg text-white">₹ 500</span>
                                                 <Button size="sm" variant="outline">Start Task</Button>
                                             </div>
                                         </CardContent>
