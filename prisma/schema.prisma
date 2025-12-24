@@ -1,0 +1,59 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  name      String
+  password  String 
+  role      String   @default("user") 
+  createdAt DateTime @default(now())
+  
+  profile   Profile?
+  applications Application[]
+}
+
+model Profile {
+  id          String   @id @default(uuid())
+  userId      String   @unique
+  user        User     @relation(fields: [userId], references: [id])
+  skills      String   
+  bio         String?
+  experience  String?  
+  education   String?  
+  location    String?
+  resumeUrl   String?
+  strength    Float    @default(0)
+}
+
+model Opportunity {
+  id          String   @id @default(uuid())
+  title       String
+  type        String   
+  company     String
+  location    String
+  salary      String?
+  description String
+  skillsRequired String 
+  deadline    DateTime?
+  postedAt    DateTime @default(now())
+  
+  applications Application[]
+}
+
+model Application {
+  id            String   @id @default(uuid())
+  userId        String
+  opportunityId String
+  user          User     @relation(fields: [userId], references: [id])
+  opportunity   Opportunity @relation(fields: [opportunityId], references: [id])
+  status        String   @default("Applied")
+  matchScore    Float?
+  createdAt     DateTime @default(now())
+}
