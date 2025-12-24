@@ -1,8 +1,8 @@
 
 "use client"
 
-import { motion, HTMLMotionProps, AnimatePresence } from "framer-motion"
-import { fadeUp, staggerContainer, fadeIn, scaleIn, confidencePulse, TRANSITION } from "@/lib/motion"
+import { motion, HTMLMotionProps } from "framer-motion"
+import { fadeUp, staggerContainer, confidencePulse, TRANSITION } from "@/lib/motion"
 import { cn } from "@/lib/utils"
 import React from "react"
 
@@ -110,4 +110,4 @@ export const AnimatedProgressBar = ({ value, className }: { value: number, class
     )
 }
 
-export { AnimatePresence }
+export { AnimatePresence } from "framer-motion"

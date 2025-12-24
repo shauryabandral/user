@@ -29,7 +29,7 @@ export default async function ApplicationsPage() {
                 </div>
             ) : (
                 <MotionList className="grid gap-4">
-                    {applications.map((app) => (
+                    {applications.map((app: any) => (
                         <MotionItem key={app.id}>
                             <MotionCardWrapper>
                                 <Card className="glass-card flex flex-row items-center justify-between p-6">
